@@ -86,9 +86,12 @@ class main:
                     # Validar la entrada
                     if put.isdigit() and int(put) in option:
                         # Si la opción es 0, salir del programa
-                        if put == "0" or option[0]:
+                        if put == option[0] or 0:
                             subprocess.run("clear", shell=True)
                             print(Fore.GREEN + "\n[*]", Fore.RESET + "Programme stopped.")
+                            sys.exit()
+                        elif put == option[1] or 1:
+                            subprocess.run(['python', 'src/core/file_manager.py'])
                             sys.exit()
                     elif put.strip() == "":
                         print(Fore.YELLOW + "[!]", Fore.RESET + "No input detected. Please select an option.")
