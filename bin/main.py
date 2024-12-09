@@ -86,7 +86,7 @@ class main:
                     # Validar la entrada
                     if put.isdigit() and int(put) in option:
                         # Si la opción es 0, salir del programa
-                        if put == option[0]:
+                        if put == "0" or option[0]:
                             subprocess.run("clear", shell=True)
                             print(Fore.GREEN + "\n[*]", Fore.RESET + "Programme stopped.")
                             sys.exit()
