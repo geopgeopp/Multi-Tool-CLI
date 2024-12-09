@@ -1,0 +1,39 @@
+### Node ###
+logs
+*.log
+*.log.*
+
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Python
+.venv/*
+
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+.cache
+.cache-*
+.tmp
+.tmp*
+.tmp-*
+paused.conf
+
+# Only dev environment - no need to clutter the repo
+pnpm-lock.yaml
+package-lock.json
